@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:drawableLeft="@drawable/icoin_user"
+        android:ems="10"
+        android:hint="FullName"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="297dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="206dp"
+        android:drawableLeft="@drawable/icoin_gmail"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFullName" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/icoin_phone"
+        android:ems="10"
+        android:hint="PhoneNumber"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtBirthDay"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:drawableLeft="@drawable/icoin_calendar"
+        android:ems="10"
+        android:hint="BirthDay"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtFullName"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="122dp"
+        android:background="@drawable/custom_button_register"
+        android:text="Update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBirthDay" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnUpdate"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/custom_button_register"
+        android:text="LogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBirthDay" />
+
+    <Button
+        android:id="@+id/btnChangesPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/custom_button_register"
+        android:text="ChangesPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBirthDay" />
+
+</RelativeLayout>

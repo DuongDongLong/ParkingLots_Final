@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/custom_input_register"
+        android:drawableLeft="@drawable/icoin_gmail"
+        android:hint="Email"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_input_register"
+        android:drawableLeft="@drawable/icoin_passwod"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnRegistration"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/custom_button_register"
+        android:text="Registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Create a new Account"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgPhotoRisg"
+        android:layout_width="181dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+
+    <EditText
+        android:drawableLeft="@drawable/icoin_user"
+        android:id="@+id/edtFullName"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:background="@drawable/custom_input_register"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:drawableLeft="@drawable/icoin_calendar"
+        android:id="@+id/edtBirthDay"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/custom_input_register"
+        android:ems="10"
+        android:hint="BirthDay"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:drawableLeft="@drawable/icoin_phone"
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp"
+        android:background="@drawable/custom_input_register"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/btnBacktoLogin"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/border_button"
+        android:text="Back to Login"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/fragment_backgroud">
+        <!-- TODO: Update blank fragment layout -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="106dp"
+            android:layout_height="97dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="124dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/FullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:text="Full Name:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/FullName"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:text="Email:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FullName" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtPhone"
+            android:layout_alignStart="@+id/FullName"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:text="Phone Number:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/FullName"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:text="Birthday:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView9"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginStart="80dp"
+            android:background="@drawable/custom_button_manage"
+            android:text="Update"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnUpdate"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/custom_button_manage"
+            android:text="Logout"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="144dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Put Image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.992"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPhoto" />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/FullName"
+            android:layout_alignStart="@+id/imgPhoto"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/FullName"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Email"
+            android:layout_alignStart="@+id/imgPhoto"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Email"
+            app:layout_constraintTop_toBottomOf="@+id/edtFullName" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtBirtday"
+            android:layout_alignEnd="@+id/edtFullName"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtBirtday"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignStart="@+id/imgPhoto"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

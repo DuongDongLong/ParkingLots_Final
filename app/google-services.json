@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "401533655151",
+    "firebase_url": "https://parkinglotsone.firebaseio.com",
+    "project_id": "parkinglotsone",
+    "storage_bucket": "parkinglotsone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401533655151:android:9212cfe9ff9fe7fc",
+        "android_client_info": {
+          "package_name": "com.vmh.manhhung.parkinglotsone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401533655151-onjmg4dks7llg80rkl80ev4gu7ia4t8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vmh.manhhung.parkinglotsone",
+            "certificate_hash": "94d739cdfd3f408136fb362093337ef956383f67"
+          }
+        },
+        {
+          "client_id": "401533655151-llaakillku65lrqd20a692bts7j2f6eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7XvsbGiChyDQhmQUSjastouqqu-2cp2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401533655151-llaakillku65lrqd20a692bts7j2f6eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

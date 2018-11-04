@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginResActivity"
+    android:background="@drawable/side_nav_bar">
+
+    <TextView
+        android:id="@+id/txtParkingLots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="70dp"
+        android:text="Parking Lots"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:textColorHint="@android:color/white"
+        android:drawableLeft="@drawable/icoin_email_trang"
+        android:id="@+id/edtEmail"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
+        android:background="#11000000"
+        android:hint="Email"
+        android:textSize="16dp" />
+
+    <EditText
+        android:drawableLeft="@drawable/icoin_password_trang"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/edtPassword"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="#11000000"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/btnLogin"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardElevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:textColor="#fff"
+        android:id="@+id/txtRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="101dp"
+        android:layout_marginEnd="151dp"
+        android:text="Register Here" />
+
+</RelativeLayout>
