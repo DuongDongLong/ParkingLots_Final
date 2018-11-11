@@ -1,0 +1,13 @@
+#Wed Nov 07 10:40:22 ICT 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=G\:\\Cacpton\\ParkingLots_Final\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\29
+base.2=G\:\\Cacpton\\ParkingLots_Final\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
+base.1=G\:\\Cacpton\\ParkingLots_Final\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\31
+base.0=G\:\\Cacpton\\ParkingLots_Final\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\28

@@ -11,7 +11,193 @@
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:elevation="10dp"
+                android:background="@drawable/white_border"
+                android:id="@+id/relLayout1">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/input_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/btnToggle"
+
+                    android:layout_marginRight="50dp"
+                    android:layout_marginEnd="50dp" android:layout_toEndOf="@+id/btnToggle" android:layout_marginStart="5dp" android:background="@null"
+                    android:hint="Nhập nơi càm tìm bãi đậu xe"
+                    android:imeOptions="actionSearch"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/ic_magnify"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginStart="10dp" android:background="@null"
+                    android:contentDescription="TODO" android:src="@drawable/ic_magnify" />
+
+                <Button
+                    android:id="@+id/btnToggle"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic_dehaze_black_24dp"
+
+                    android:checked="false" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/ic_gps"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/relLayout1"
+                android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp" android:layout_marginRight="5dp"
+                android:contentDescription="TODO" android:scaleType="centerCrop"
+                android:src="@drawable/ic_gps" />
+
+            <LinearLayout
+                android:id="@+id/test"
+
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="0dp"
+                android:background="#DDDDDD"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center"
+                    android:text="Bãi A1"
+                    android:textColor="#000"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtGio"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Gio"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/edtPhut"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Phut"
+                        android:textSize="20dp" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginStart="0dp" android:gravity="center"
+                            android:text="30000đ"
+                            android:textSize="20dp" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnThanhToan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#0066CC	"
+                    android:text="Thanh Toan"
+
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+   <!-- </include>-->
+
+
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
